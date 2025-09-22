@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web开发学习工具箱</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- 网站头部 -->
+    <header>
+        <h1>Web开发学习工具箱</h1>
+        <p>通过实践学习各种Web开发技术</p>
+    </header>
+
+    <!-- 导航菜单 -->
+    <nav>
+        <ul>
+            <li><a href="#calculator">计算器</a></li>
+            <li><a href="#to-do">待办事项</a></li>
+            <li><a href="#weather">天气查询</a></li>
+            <li><a href="#color-picker">颜色选择器</a></li>
+            <li><a href="#counter">计数器</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主内容区域 -->
+    <main>
+        <!-- 功能模块1: 计算器 -->
+        <section id="calculator" class="module">
+            <h2>计算器</h2>
+            <div class="calculator-container">
+                <input type="text" id="calc-display" readonly>
+                <div class="calc-buttons">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn operator">/</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn operator">*</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn operator">-</button>
+                    <button class="btn">0</button>
+                    <button class="btn decimal">.</button>
+                    <button class="btn equals">=</button>
+                    <button class="btn operator">+</button>
+                    <button class="btn clear" colspan="4">清除</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能模块2: 待办事项 -->
+        <section id="to-do" class="module">
+            <h2>待办事项列表</h2>
+            <div class="todo-container">
+                <input type="text" id="todo-input" placeholder="添加新的待办事项...">
+                <button id="add-todo">添加</button>
+                <ul id="todo-list"></ul>
+            </div>
+        </section>
+
+        <!-- 功能模块3: 天气查询 (模拟) -->
+        <section id="weather" class="module">
+            <h2>天气查询</h2>
+            <div class="weather-container">
+                <input type="text" id="city-input" placeholder="输入城市名称...">
+                <button id="search-weather">查询</button>
+                <div id="weather-result"></div>
+            </div>
+        </section>
+
+        <!-- 功能模块4: 颜色选择器 -->
+        <section id="color-picker" class="module">
+            <h2>颜色选择器</h2>
+            <div class="color-container">
+                <input type="color" id="color-input" value="#ff0000">
+                <div id="color-preview"></div>
+                <p id="color-code">#ff0000</p>
+            </div>
+        </section>
+
+        <!-- 功能模块5: 计数器 -->
+        <section id="counter" class="module">
+            <h2>计数器</h2>
+            <div class="counter-container">
+                <button id="decrement">-</button>
+                <span id="count">0</span>
+                <button id="increment">+</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2023 Web开发学习工具箱 | 通过实践学习</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
